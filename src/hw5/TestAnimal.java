@@ -2,10 +2,10 @@ package hw5;
 
 public class TestAnimal {
     public static void main(String[] args) {
-        Fish fish = new Fish(1, 3, 0.3, "blue");
+        Fish fish = new Fish(1, 3, 0.3, "blue", false);
         System.out.println(fish.voice());
 
-        Cat cat = new Cat(2,3,5.0,"black", "Simon", true);
+        Cat cat = new Cat(2,3,5.0,"black", "Simon", true, true);
         System.out.println(cat.voice());
 
         Crocodile crocodile = new Crocodile(3, 100, 60.0, "green", true);
@@ -17,13 +17,13 @@ public class TestAnimal {
         Dog_guide dog_guide = new Dog_guide(5,5, 3.0, "pink", true);
         System.out.println(dog_guide.voice());
 
-        Giraffe giraffe = new Giraffe(6,3, 7., "orange", true);
+        Giraffe giraffe = new Giraffe(6,3, 7., "orange", true, false);
         System.out.println(giraffe.voice());
 
-        Hamster hamster = new Hamster(7,1,6., "orange", 2);
+        Hamster hamster = new Hamster(7,1,6., "orange", false);
         System.out.println(hamster.voice());
 
-        Leo leo = new Leo(8,8,8.,"orange", true);
+        Leo leo = new Leo(8,8,8.,"orange", true, true);
         System.out.println(leo.voice());
 
         Wolf wolf = new Wolf(9,9,9., "grey", true);

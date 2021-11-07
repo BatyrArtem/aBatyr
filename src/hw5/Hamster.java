@@ -1,19 +1,13 @@
 package hw5;
 
-public class Hamster extends Animal {
-    public int name;
+public class Hamster extends WildAnimal {
 
-    public Hamster(int id, int age, double weight, String color, int name) {
-        super(id, age, weight, color);
-        this.name = name;
-    }
-
-    public int getName() {
-        return name;
+    public Hamster(int id, int age, double weight, String color, boolean isPredator) {
+        super(id, age, weight, color, isPredator);
     }
 
     @Override
     public String voice() {
-        return "Hello, my name is" + getName();
+        return super.voice();
     }
 }

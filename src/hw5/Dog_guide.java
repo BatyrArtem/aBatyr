@@ -1,8 +1,8 @@
 package hw5;
 
-import lombok.ToString;
+//import lombok.ToString;
 
-@ToString
+//@ToString
 public class Dog_guide extends Animal{
     private boolean isTrained;
 

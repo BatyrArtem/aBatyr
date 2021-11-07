@@ -1,20 +1,13 @@
 package hw5;
 
-public class Dog extends Animal {
-    private String name;
-    private boolean isVaccinated;
-    public Dog(int id, int age, double weight, String color, String name, boolean isVaccinated) {
-        super(id, age, weight, color);
-        this.name = name;
-        this.isVaccinated = isVaccinated;
-    }
+public class Dog extends PetAnimal {
 
-    public String getName() {
-        return name;
+    public Dog(int id, int age, double weight, String color, String name, boolean isVaccinate) {
+        super(id, age, weight, color, name, isVaccinate);
     }
 
     @Override
     public String voice() {
-        return "Hello, my name is " + getName() + " Woof";
+        return super.voice() + " Woof";
     }
 }

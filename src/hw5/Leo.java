@@ -1,15 +1,15 @@
 package hw5;
 
-public class Leo extends Animal {
+public class Leo extends WildAnimal {
     private boolean isPredator;
 
-    public Leo(int id, int age, double weight, String color, boolean isPredator) {
-        super(id, age, weight, color);
-        this.isPredator = isPredator;
+    public Leo(int id, int age, double weight, String color, boolean isPredator, boolean isPredator1) {
+        super(id, age, weight, color, isPredator);
+        this.isPredator = isPredator1;
     }
 
     @Override
     public String voice() {
-        return "Hello, I am a wild animal" + " and I am angry";
+        return super.voice() + " and I am angry";
     }
 }
